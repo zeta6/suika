@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:suika/core/utils/routes.dart';
 import 'package:suika/features/home/presentation/home_page.dart';
 
 class SuikaApp extends StatelessWidget {
@@ -8,6 +9,8 @@ class SuikaApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      initialRoute: '/',
+      routes: Routes.main,
       title: 'suika flutter',
       theme: ThemeData(
         // This is the theme of your application.

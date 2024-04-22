@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:suika/core/widgets/layout/layout.dart';
-import 'package:suika/features/game/presentation/game_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({
@@ -39,12 +38,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               onPressed: () {
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute<void>(
-                    builder: (BuildContext context) => const GamePage(),
-                  ),
-                );
+                Navigator.pushNamed(context, '/game');
               },
             )
           ],
